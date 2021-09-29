@@ -7,7 +7,7 @@
   typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('vue')) :
   typeof define === 'function' && define.amd ? define(['exports', 'vue'], factory) :
   (global = typeof globalThis !== 'undefined' ? globalThis : global || self, factory(global.VueCarousel = {}, global.Vue));
-}(this, (function (exports, vue) { 'use strict';
+})(this, (function (exports, vue) { 'use strict';
 
   function counterFactory() {
       return new Proxy({ value: 0, read: 0 }, {
@@ -423,8 +423,8 @@
   const icons = {
       arrowUp: 'M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z',
       arrowDown: 'M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z',
-      arrowRight: 'M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z',
-      arrowLeft: 'M15.41 16.59L10.83 12l4.58-4.59L14 6l-6 6 6 6 1.41-1.41z',
+      arrowRight: 'M 7 19 L 8 19 Q 11 17 18 12 Q 13 9 8 6 L 7 6 Q 12 9 17 12',
+      arrowLeft: 'M 17 19 L 16 19 Q 6 12 6 12 Q 6 12 6 12 Q 10 10 16 6 L 17 6 Q 11 10 7 12',
   };
 
   const Icon = (props) => {
@@ -541,4 +541,4 @@
 
   Object.defineProperty(exports, '__esModule', { value: true });
 
-})));
+}));
